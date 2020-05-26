@@ -15,7 +15,27 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        setupView()
+        setupModel()
+    }
+    
+    // MARK: - Private functions
+    
+    fileprivate func setupView() {
+        
+        if let aView = self.view as? AccountViewProtocol {
+            if (accountView == nil) {
+                setAccountView(aView)
+            }
+        }
+    }
+    
+    fileprivate func setupModel() {
+        
+        if accountModel == nil {
+            setAccountModel(AccountModel())
+        }
     }
     
     // MARK: - Dependency injection methods
