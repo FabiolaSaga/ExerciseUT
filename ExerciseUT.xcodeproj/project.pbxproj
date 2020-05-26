@@ -18,6 +18,7 @@
 		F3DF360C247D98BA007CD870 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF360B247D98BA007CD870 /* AccountModel.swift */; };
 		F3DF360F247D9945007CD870 /* AccountModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF360D247D9945007CD870 /* AccountModelTest.swift */; };
 		F3DF3611247D9BC7007CD870 /* AccountViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF3610247D9BC7007CD870 /* AccountViewProtocol.swift */; };
+		F3DF3613247DA168007CD870 /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF3612247DA168007CD870 /* ViewControllerTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		F3DF360B247D98BA007CD870 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
 		F3DF360D247D9945007CD870 /* AccountModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModelTest.swift; sourceTree = "<group>"; };
 		F3DF3610247D9BC7007CD870 /* AccountViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewProtocol.swift; sourceTree = "<group>"; };
+		F3DF3612247DA168007CD870 /* ViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				F35B9C65247D956600A2184F /* ExerciseUTTests.swift */,
 				F35B9C67247D956600A2184F /* Info.plist */,
 				F3DF360D247D9945007CD870 /* AccountModelTest.swift */,
+				F3DF3612247DA168007CD870 /* ViewControllerTest.swift */,
 			);
 			path = ExerciseUTTests;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			files = (
 				F35B9C66247D956600A2184F /* ExerciseUTTests.swift in Sources */,
 				F3DF360F247D9945007CD870 /* AccountModelTest.swift in Sources */,
+				F3DF3613247DA168007CD870 /* ViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
