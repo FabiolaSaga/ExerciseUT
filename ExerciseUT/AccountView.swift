@@ -26,23 +26,24 @@ class AccountView: UIView, AccountViewProtocol {
     // Load xib file
         func commonInit() {
             Bundle.main.loadNibNamed("AccountView", owner: self, options: nil)
+            addSubview(accountView)
         }
     
     // MARK: - View Protocol Stubs
     func getWithdrawalValue() -> String {
-        return ""
+        return withdrawalValueField.text ?? ""
     }
     
     func getDepositValue() -> String {
-        return ""
+        return depositValueField.text ?? ""
     }
     
     func setBalanceValue(balanceAmount: String) {
-        
+        balanceValueView.text = balanceAmount
     }
     
     func setController(controller: ViewController) {
-        
+        self.controller = controller
     }
     
     // MARK: - IBAction
