@@ -12,9 +12,11 @@ import XCTest
 class ViewControllerTest: XCTestCase {
     
     var controller: ViewController = ViewController()
+    let mockView: MockView = MockView()
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        controller.setAccountView(mockView)
         controller.setAccountModel(AccountModel())
     }
 
@@ -23,7 +25,32 @@ class ViewControllerTest: XCTestCase {
     }
 
     func testProcessTransactionRequest() {
-        
+        controller.processTransactionRequest()
+        XCTAssertEqual("$1.00", mockView.balance)
     }
 
+}
+
+class MockView: AccountViewProtocol {
+    
+    var balance: String?
+    
+    func getWithdrawalValue() -> String {
+        return "10"
+    }
+    
+    func getDepositValue() -> String {
+        return "11"
+    }
+    
+    func setBalanceValue(balanceAmount: String) {
+        balance = balanceAmount
+    }
+    
+    func setController(controller: ViewController) {
+        
+    }
+    
+    
+    
 }
