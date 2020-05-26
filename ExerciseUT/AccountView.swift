@@ -11,6 +11,13 @@ import UIKit
 
 class AccountView: UIView, AccountViewProtocol {
     
+    @IBOutlet weak var accountView: UIView!
+    @IBOutlet weak var balanceValueView: UILabel!
+    @IBOutlet weak var withdrawalValueField: UITextField!
+    @IBOutlet weak var depositValueField: UITextField!
+    
+    var controller: ViewController?
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
@@ -37,5 +44,10 @@ class AccountView: UIView, AccountViewProtocol {
     func setController(controller: ViewController) {
         
     }
-     
+    
+    // MARK: - IBAction
+    @IBAction func submitClicked(_ sender: Any) {
+        self.controller?.processTransactionRequest()
+    }
+    
 }
