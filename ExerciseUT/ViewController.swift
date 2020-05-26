@@ -50,7 +50,29 @@ class ViewController: UIViewController {
         func setAccountModel(_ aModel: AccountModelProtocol) {
             accountModel = aModel
         }
-
+    
+    // MARK: - Functions
+    
+    func processTransactionRequest() {
+        
+        let depositString = accountView?.getDepositValue()
+        let withdrawalString = accountView?.getWithdrawalValue()
+        
+        let deposit = getValue(depositString)
+        let withdrawal = getValue(withdrawalString)
+        let balance = accountModel?.transact(deposit: deposit, withdraw: withdrawal)
+        
+        accountView?.setBalanceValue(balanceAmount: String(format: "$%.02f", balance ?? 0))
+    }
+    
+    func getValue(_ text: String?) -> Double {
+        
+        if let text = text {
+            return Double(text) ?? 0
+        }
+            
+        return 0
+    }
 
 }
 
