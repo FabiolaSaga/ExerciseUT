@@ -20,6 +20,7 @@
 		F3DF3611247D9BC7007CD870 /* AccountViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF3610247D9BC7007CD870 /* AccountViewProtocol.swift */; };
 		F3DF3613247DA168007CD870 /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF3612247DA168007CD870 /* ViewControllerTest.swift */; };
 		F3DF3615247DA571007CD870 /* AccountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3DF3614247DA571007CD870 /* AccountView.xib */; };
+		F3DF3617247DA763007CD870 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF3616247DA763007CD870 /* AccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		F3DF3610247D9BC7007CD870 /* AccountViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewProtocol.swift; sourceTree = "<group>"; };
 		F3DF3612247DA168007CD870 /* ViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
 		F3DF3614247DA571007CD870 /* AccountView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountView.xib; sourceTree = "<group>"; };
+		F3DF3616247DA763007CD870 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				F3DF360B247D98BA007CD870 /* AccountModel.swift */,
 				F3DF3610247D9BC7007CD870 /* AccountViewProtocol.swift */,
 				F3DF3614247DA571007CD870 /* AccountView.xib */,
+				F3DF3616247DA763007CD870 /* AccountView.swift */,
 			);
 			path = ExerciseUT;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				F3DF360C247D98BA007CD870 /* AccountModel.swift in Sources */,
 				F35B9C53247D956400A2184F /* ViewController.swift in Sources */,
 				F35B9C71247D96F200A2184F /* AccountModelProtocol.swift in Sources */,
+				F3DF3617247DA763007CD870 /* AccountView.swift in Sources */,
 				F35B9C4F247D956400A2184F /* AppDelegate.swift in Sources */,
 				F35B9C51247D956400A2184F /* SceneDelegate.swift in Sources */,
 			);
