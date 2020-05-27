@@ -8,6 +8,11 @@
 
 import Foundation
 
+/// AccountViewProtocol defines a view
+/// where a balance value is set,
+/// obtains values from the input entered in textfields
+/// and sets a controller to pass events to
+
 protocol AccountViewProtocol {
     
     func getWithdrawalValue() -> String

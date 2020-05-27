@@ -11,10 +11,12 @@ import UIKit
 
 class AccountView: UIView, AccountViewProtocol {
     
+    // MARK: IBOutlets
     @IBOutlet weak var accountView: UIView!
     @IBOutlet weak var balanceValueView: UILabel!
     @IBOutlet weak var withdrawalValueField: UITextField!
     @IBOutlet weak var depositValueField: UITextField!
+    
     
     var controller: ViewController?
     
@@ -23,13 +25,13 @@ class AccountView: UIView, AccountViewProtocol {
         commonInit()
     }
     
-    // Load xib file
+    /// Loads xib file
         func commonInit() {
             Bundle.main.loadNibNamed("AccountView", owner: self, options: nil)
             addSubview(accountView)
         }
     
-    // MARK: - View Protocol Stubs
+    // MARK: - View Protocol Implementation
     func getWithdrawalValue() -> String {
         return withdrawalValueField.text ?? ""
     }
