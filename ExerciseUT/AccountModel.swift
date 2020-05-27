@@ -8,8 +8,11 @@
 
 import Foundation
 
+/// Account Model implements AccountModelProtocol
+
 class AccountModel: AccountModelProtocol {
     
+    /// Data type of Double holds the account balance
     var balance: Double = 0
     
     func transact(deposit: Double, withdraw: Double) -> Double {

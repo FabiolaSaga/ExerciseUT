@@ -10,7 +10,11 @@ import Foundation
 
 protocol AccountModelProtocol {
     
-    // function will deposit or withdraw an amount and will
-    // return the balance
+    /// Returns a balance
+    ///
+    /// - Parameters:
+    /// - deposit: will deposit the amount entered
+    /// - withdraw: will deduct the amount entered
+    /// - Returns: returns the balance after the transaction
     func transact(deposit: Double, withdraw: Double) -> Double
 }
