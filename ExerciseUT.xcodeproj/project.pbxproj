@@ -13,7 +13,13 @@
 		F35B9C56247D956400A2184F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F35B9C54247D956400A2184F /* Main.storyboard */; };
 		F35B9C58247D956600A2184F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35B9C57247D956600A2184F /* Assets.xcassets */; };
 		F35B9C5B247D956600A2184F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F35B9C59247D956600A2184F /* LaunchScreen.storyboard */; };
-		F35B9C66247D956600A2184F /* ExerciseUTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35B9C65247D956600A2184F /* ExerciseUTTests.swift */; };
+		F35B9C71247D96F200A2184F /* AccountModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35B9C70247D96F200A2184F /* AccountModelProtocol.swift */; };
+		F3DF360C247D98BA007CD870 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF360B247D98BA007CD870 /* AccountModel.swift */; };
+		F3DF360F247D9945007CD870 /* AccountModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF360D247D9945007CD870 /* AccountModelTest.swift */; };
+		F3DF3611247D9BC7007CD870 /* AccountViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF3610247D9BC7007CD870 /* AccountViewProtocol.swift */; };
+		F3DF3613247DA168007CD870 /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF3612247DA168007CD870 /* ViewControllerTest.swift */; };
+		F3DF3615247DA571007CD870 /* AccountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3DF3614247DA571007CD870 /* AccountView.xib */; };
+		F3DF3617247DA763007CD870 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF3616247DA763007CD870 /* AccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +42,14 @@
 		F35B9C5A247D956600A2184F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F35B9C5C247D956600A2184F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F35B9C61247D956600A2184F /* ExerciseUTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExerciseUTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F35B9C65247D956600A2184F /* ExerciseUTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseUTTests.swift; sourceTree = "<group>"; };
 		F35B9C67247D956600A2184F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F35B9C70247D96F200A2184F /* AccountModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModelProtocol.swift; sourceTree = "<group>"; };
+		F3DF360B247D98BA007CD870 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		F3DF360D247D9945007CD870 /* AccountModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModelTest.swift; sourceTree = "<group>"; };
+		F3DF3610247D9BC7007CD870 /* AccountViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewProtocol.swift; sourceTree = "<group>"; };
+		F3DF3612247DA168007CD870 /* ViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
+		F3DF3614247DA571007CD870 /* AccountView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountView.xib; sourceTree = "<group>"; };
+		F3DF3616247DA763007CD870 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +98,11 @@
 				F35B9C57247D956600A2184F /* Assets.xcassets */,
 				F35B9C59247D956600A2184F /* LaunchScreen.storyboard */,
 				F35B9C5C247D956600A2184F /* Info.plist */,
+				F35B9C70247D96F200A2184F /* AccountModelProtocol.swift */,
+				F3DF360B247D98BA007CD870 /* AccountModel.swift */,
+				F3DF3610247D9BC7007CD870 /* AccountViewProtocol.swift */,
+				F3DF3614247DA571007CD870 /* AccountView.xib */,
+				F3DF3616247DA763007CD870 /* AccountView.swift */,
 			);
 			path = ExerciseUT;
 			sourceTree = "<group>";
@@ -93,8 +110,9 @@
 		F35B9C64247D956600A2184F /* ExerciseUTTests */ = {
 			isa = PBXGroup;
 			children = (
-				F35B9C65247D956600A2184F /* ExerciseUTTests.swift */,
 				F35B9C67247D956600A2184F /* Info.plist */,
+				F3DF360D247D9945007CD870 /* AccountModelTest.swift */,
+				F3DF3612247DA168007CD870 /* ViewControllerTest.swift */,
 			);
 			path = ExerciseUTTests;
 			sourceTree = "<group>";
@@ -180,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3DF3615247DA571007CD870 /* AccountView.xib in Resources */,
 				F35B9C5B247D956600A2184F /* LaunchScreen.storyboard in Resources */,
 				F35B9C58247D956600A2184F /* Assets.xcassets in Resources */,
 				F35B9C56247D956400A2184F /* Main.storyboard in Resources */,
@@ -200,7 +219,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3DF3611247D9BC7007CD870 /* AccountViewProtocol.swift in Sources */,
+				F3DF360C247D98BA007CD870 /* AccountModel.swift in Sources */,
 				F35B9C53247D956400A2184F /* ViewController.swift in Sources */,
+				F35B9C71247D96F200A2184F /* AccountModelProtocol.swift in Sources */,
+				F3DF3617247DA763007CD870 /* AccountView.swift in Sources */,
 				F35B9C4F247D956400A2184F /* AppDelegate.swift in Sources */,
 				F35B9C51247D956400A2184F /* SceneDelegate.swift in Sources */,
 			);
@@ -210,7 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F35B9C66247D956600A2184F /* ExerciseUTTests.swift in Sources */,
+				F3DF360F247D9945007CD870 /* AccountModelTest.swift in Sources */,
+				F3DF3613247DA168007CD870 /* ViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
